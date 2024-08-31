@@ -151,13 +151,13 @@ switch (platform) {
     switch (arch) {
       case 'x64':
         localFileExisted = existsSync(
-          join(__dirname, 'desktop_napi.linux-x64-musl.node')
+          join(__dirname, 'desktop_napi.linux-x64-gnu.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./desktop_napi.linux-x64-musl.node')
+            nativeBinding = require('./desktop_napi.linux-x64-gnu.node')
           } else {
-            nativeBinding = require('@bitwarden/desktop-napi-linux-x64-musl')
+            nativeBinding = require('@bitwarden/desktop-napi-linux-x64-gnu')
           }
         } catch (e) {
           loadError = e
@@ -165,13 +165,13 @@ switch (platform) {
         break
       case 'arm64':
         localFileExisted = existsSync(
-          join(__dirname, 'desktop_napi.linux-arm64-musl.node')
+          join(__dirname, 'desktop_napi.linux-arm64-gnu.node')
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./desktop_napi.linux-arm64-musl.node')
+            nativeBinding = require('./desktop_napi.linux-arm64-gnu.node')
           } else {
-            nativeBinding = require('@bitwarden/desktop-napi-linux-arm64-musl')
+            nativeBinding = require('@bitwarden/desktop-napi-linux-arm64-gnu')
           }
         } catch (e) {
           loadError = e
