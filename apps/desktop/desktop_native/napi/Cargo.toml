@@ -31,3 +31,9 @@ windows-registry = { workspace = true }
 
 [build-dependencies]
 napi-build = { workspace = true }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = false
+incremental = false
