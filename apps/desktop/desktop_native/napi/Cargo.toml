@@ -38,3 +38,9 @@ napi-build = { workspace = true }
 
 [lints]
 workspace = true
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = false
+incremental = false
