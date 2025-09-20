@@ -4,7 +4,7 @@ const child_process = require("child_process");
 const path = require("path");
 
 const { flipFuses, FuseVersion, FuseV1Options } = require("@electron/fuses");
-const builder = require("electron-builder");
+const builder = require("@loongdotjs/electron-builder");
 const fse = require("fs-extra");
 
 exports.default = run;
