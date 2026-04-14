@@ -92,6 +92,12 @@ switch (platform) {
           "@bitwarden/desktop-napi-linux-arm64-gnu",
         );
         break;
+      case "loong64":
+        nativeBinding = loadFirstAvailable(
+          ["desktop_napi.linux-loong64-gnu.node"],
+          "@bitwarden/desktop-napi-linux-loong64-gnu",
+        );
+        break;
       case "arm":
         nativeBinding = loadFirstAvailable(
           ["desktop_napi.linux-arm-gnu.node"],

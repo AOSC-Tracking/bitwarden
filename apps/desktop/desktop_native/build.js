@@ -13,6 +13,7 @@ const rustTargetsMap = {
     "aarch64-apple-darwin":       { nodeArch: 'arm64', platform: 'darwin' },
     'x86_64-unknown-linux-gnu':   { nodeArch: 'x64',   platform: 'linux'  },
     'aarch64-unknown-linux-gnu':  { nodeArch: 'arm64', platform: 'linux'  },
+    'loongarch64-unknown-linux-gnu': { nodeArch: 'loong64', platform: 'linux' },
 }
 
 // Ensure the dist directory exists
@@ -48,7 +49,7 @@ function buildNapiModule(target, release = true) {
 
 /**
  * Build a Rust binary with Cargo.
- * 
+ *
  * If {@link target} is specified, cross-compilation helpers are used to build if necessary, and the resulting
  * binary is copied to the `dist` folder.
  * @param {string} bin Name of cargo binary package in `desktop_native` workspace.
