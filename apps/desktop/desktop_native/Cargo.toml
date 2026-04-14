@@ -97,3 +97,6 @@ print_stdout = "deny"
 string_slice = "warn"
 unused_async = "deny"
 unwrap_used = "deny"
+
+[patch.crates-io]
+libc = { git = "https://github.com/miwu04/libc", rev = "f75161e97cfa1ea61e493462db2d717cb5d2fd49" }
