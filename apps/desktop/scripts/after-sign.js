@@ -3,7 +3,7 @@ require("dotenv").config();
 const path = require("path");
 
 const { notarize } = require("@electron/notarize");
-const { deepAssign } = require("builder-util");
+const { deepAssign } = require("@loongdotjs/builder-util");
 const fse = require("fs-extra");
 
 exports.default = run;
