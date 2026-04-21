@@ -109,3 +109,6 @@ cargo-sort = { version = "2.0.2", locked = true }
 cargo-udeps = { version = "0.1.57", locked = true }
 cargo-llvm-cov = { version = "0.6.16", locked = true }
 cargo-xwin = { version = "0.23.0", locked = true }
+
+[patch.crates-io]
+libc = { path = "../../../../rust-lang-libc" }
