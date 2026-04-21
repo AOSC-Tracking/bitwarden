@@ -128,6 +128,7 @@ module.exports.buildConfig = function buildConfig(params) {
     externals: {
       "electron-reload": "commonjs2 electron-reload",
       "@bitwarden/desktop-napi": "commonjs2 @bitwarden/desktop-napi",
+      "electron-updater": "commonjs2 electron-updater",
     },
   };
 
