@@ -108,6 +108,12 @@ switch (platform) {
           loadError = e;
         }
         break;
+      case "loong64":
+        nativeBinding = loadFirstAvailable(
+          ["desktop_napi.linux-loong64-gnu.node"],
+          "@bitwarden/desktop-napi-linux-loong64-gnu",
+        );
+        break;
       default:
         throw new Error(`Unsupported architecture on Linux: ${arch}`);
     }
