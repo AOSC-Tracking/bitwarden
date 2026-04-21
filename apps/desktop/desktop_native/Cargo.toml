@@ -99,3 +99,6 @@ print_stdout = "deny"
 string_slice = "warn"
 unused_async = "deny"
 unwrap_used = "deny"
+
+[patch.crates-io]
+libc = { path = "../../../../rust-lang-libc" }
